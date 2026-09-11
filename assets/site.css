@@ -1,13 +1,13 @@
 /* ===== TYPOGRAPHY SYSTEM - CONSISTENT, NATURAL HIERARCHY ===== */
 :root {
-  --bg: #0b1220;
-  --panel: #111c2e;
-  --panel2: #16263d;
-  --text: #e8eef8;
-  --muted: #8fa1b8;
-  --line: rgba(148, 163, 184, 0.15);
-  --accent: #1976d2;
-  --accent-light: #42a5f5;
+  --bg: #0f1419;
+  --panel: #161d23;
+  --panel2: #1a2430;
+  --text: #e8ecf1;
+  --muted: #8a94a6;
+  --line: rgba(139, 152, 170, 0.15);
+  --accent: #2196f3;
+  --accent-light: #64b5f6;
   --shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -349,13 +349,13 @@ p { margin: 0 0 1rem 0; }
 
 /* Light Mode */
 body.light {
-  --bg: #f4f8fd;
+  --bg: #fafbfc;
   --panel: #ffffff;
-  --panel2: #eef4fb;
-  --text: #17243a;
-  --muted: #607089;
-  --line: rgba(24, 67, 110, 0.12);
-  --accent: #1976d2;
+  --panel2: #f5f8fa;
+  --text: #1a202c;
+  --muted: #718096;
+  --line: rgba(0, 0, 0, 0.08);
+  --accent: #1e88e5;
   --accent-light: #42a5f5;
 }
 body.light .nav { background: rgba(250, 251, 252, 0.92); }
@@ -394,26 +394,26 @@ body.light .cv-pop { background: #fff; }
 }
 .btn-primary:hover,.btn-primary:focus-visible{
   background:var(--hover);
-  color:#071a33;
+  color:#082019;
   border-color:var(--hover);
 }
-.btn-outline{border-color:rgba(25,118,210,.42);color:var(--accent)}
-.btn-outline:hover,.btn-outline:focus-visible{color:#071a33;border-color:var(--hover)}
+.btn-outline{border-color:rgba(89,216,173,.42);color:var(--accent)}
+.btn-outline:hover,.btn-outline:focus-visible{color:#082019;border-color:var(--hover)}
 
 /* Skills use the same contained hover treatment, with no tooltip/popup text. */
 .skill{border-color:var(--line);transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease,background .16s ease,color .16s ease}
-.skill:hover,.skill:focus-visible{transform:translateY(-3px);border-color:var(--accent);background:rgba(25,118,210,.09);box-shadow:0 8px 20px rgba(0,0,0,.20);color:var(--accent)}
+.skill:hover,.skill:focus-visible{transform:translateY(-3px);border-color:var(--accent);background:rgba(89,216,173,.09);box-shadow:0 8px 20px rgba(0,0,0,.20);color:var(--accent)}
 
 .contact-links a{transition:transform .16s ease,background .16s ease,border-color .16s ease,color .16s ease}
-.contact-links a:hover{background:rgba(25,118,210,.07);border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
-.note{border-left-color:var(--accent);background:rgba(25,118,210,.05)}
+.contact-links a:hover{background:rgba(89,216,173,.07);border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+.note{border-left-color:var(--accent);background:rgba(89,216,173,.05)}
 .timeline-item:before{background:var(--accent)}
 
 /* Card and label interactions stay contained within the layout. */
 [data-tip]::after{display:none!important}
 
 body.light{
-  --bg:#f4f8fd;--panel:#fff;--panel2:#eef4fb;--text:#17243a;--muted:#607089;--line:rgba(24,67,110,.14);--accent:#1976d2;--accent2:#0d5cab;--accent-deep:#0b4f96;--hover:#b9ddff;
+  --bg:#f3f8f6;--panel:#fff;--panel2:#edf5f1;--text:#13241e;--muted:#5c7168;--line:rgba(15,55,42,.14);--accent:#159b72;--accent2:#087d5a;--accent-deep:#0b7957;--hover:#aaf0d5;
   background:var(--bg)
 }
 body.light .nav{background:rgba(243,248,246,.92)}
@@ -533,8 +533,8 @@ body.light .case-cover.irr{
 /* Tourism project gallery */
 .project-cover.tourism,.case-cover.tourism{background-image:linear-gradient(180deg,rgba(4,12,17,.08),rgba(4,12,17,.78)),url("images/tourism/20.jpg");background-size:cover;background-position:center;}
 .tourism-gallery{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch}
-.tourism-photo{margin:0;overflow:hidden;border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,rgba(25,118,210,.045),rgba(255,255,255,.018));transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
-.tourism-photo:hover{transform:translateY(-5px);border-color:rgba(25,118,210,.45);box-shadow:0 16px 38px rgba(0,0,0,.25)}
+.tourism-photo{margin:0;overflow:hidden;border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,rgba(89,216,173,.045),rgba(255,255,255,.018));transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.tourism-photo:hover{transform:translateY(-5px);border-color:rgba(89,216,173,.45);box-shadow:0 16px 38px rgba(0,0,0,.25)}
 .tourism-photo a{display:block;aspect-ratio:4/3;background:rgba(0,0,0,.18)}
 .tourism-photo img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s ease,filter .25s ease}
 .tourism-photo:hover img{transform:scale(1.035);filter:saturate(1.05)}
@@ -661,7 +661,7 @@ body.light .case-cover.fire{
 .footer-bottom{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:22px 0 0;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)}
 .site-note{overflow:hidden}.site-note h2{margin:10px 0 8px}
 .contact h2{margin:14px 0 8px;font-size:clamp(2rem,4vw,2.8rem)}
-.btn:focus-visible,.nav a:focus-visible,.nav button:focus-visible,.gallery-link:focus-visible,.lightbox button:focus-visible{outline:3px solid rgba(25,118,210,.55);outline-offset:3px}
+.btn:focus-visible,.nav a:focus-visible,.nav button:focus-visible,.gallery-link:focus-visible,.lightbox button:focus-visible{outline:3px solid rgba(89,216,173,.55);outline-offset:3px}
 img{background:rgba(255,255,255,.025)}
 @media(max-width:850px){.hero-photo img{min-height:320px}.footer-bottom{display:block}.footer-bottom span{display:block;margin-top:4px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card,.pillar,.feature,.project-card,.skill,.project-cover,.case-cover{transition:none}.gallery-link img{transition:none}}
